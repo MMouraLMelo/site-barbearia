@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 header{
     background-color: #BBBBBB;
     padding: 20px 0px;
@@ -92,10 +93,6 @@ footer{
     margin: 20px;
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
-}
 
 form{
     margin: 40px 0;
@@ -149,4 +146,128 @@ thead{
 td, th{
     border: 1px black solid;
     padding: 8px 15px;
+}
+
+/* CSS da página inicial */
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+
+.principal{
+    margin: 3em 0;
+    background-color: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background-color: #888888;
+}
+
+.conteudo-ben{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-ben{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.lista{
+    line-height: 1.5;
+}
+
+.lista:first-child{
+    font-weight: bold;
+}
+
+.lista::before{
+    content: "★";
+}
+
+.imagem2{
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.imagem2:hover{
+    opacity: 0.3;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-conteudo{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+    .caixa, .principal, .conteudo-ben, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-ben, .imagem2{
+        width: 100%;
+    }
+    
+    .servicos{
+        width: 100%;
+    }
+
+    .servicos li{
+        width: 100%;
+    }
+
 }
